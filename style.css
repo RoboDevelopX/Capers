@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+[data-theme="light"],
+:root:not([data-theme="dark"]),
+:root:not([data-theme="light"]),
+[data-theme="dark"] {
+  --primary: #79D;
+  --primary-hover: #57A;
+  --primary-focus: rgba(152, 152, 219, 0.25);
+  --primary-inverse: #FFF;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  transition: background 0.25s;
+}
+
+div,
+nav,
+h3,
+h1,
+body {
+  font-family: 'League Spartan', sans-serif;
+}
+
+strong {
+  font-size: 1.5rem;
+}
+
+strong a {
+  background-color: #A9D4;
+  padding: 0.4rem 2rem 0 2rem;
+  margin-right: 0.75rem;
+  border-radius: 3rem;
+}
+
+article {
+  background-color: #A9D4;
+  animation: fadeUp 1s;
+}
+
+#recommendations {
+  display: none;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}

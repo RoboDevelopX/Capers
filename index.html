@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+<head lang="en">
+
+  <meta charset="utf-8">
+
+  <meta name="description" content="career advancement exams recommendation system.">
+  <meta name="keywords" content="career, counselling, exams, jobs">
+  <meta name="author" content="Animesh Nath">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#779ADE">
+
+  <title>CAPERS</title>
+  <link type="image/png" sizes="96x96" rel="icon" href="icon.png">
+
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+
+</head>
+
+<body class="container" onload="parse('testimonials')">
+  <nav>
+    <ul>
+      <li>
+        <details role="list">
+          <summary aria-haspopup="listbox" role="link"><i class="fa-solid fa-bars"></i></summary>
+          <ul role="listbox">
+            <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
+            <li><a href="#testimonials"><i class="fa-solid fa-award"></i> Testimonials</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <strong>
+          <a href="/">CAPERS</a>
+        </strong>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="#" onclick="DarkMode()">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <br>
+  <br>
+
+  <article>
+    <h3>Career Advancing Posts & Exams Recommendation System. </h3>
+
+    <details role="list">
+      <summary aria-haspopup="listbox" role="button"><i class="fa-solid fa-book-open-reader"></i> &nbsp; 10th Pass</summary>
+      <ul role="listbox">
+        <li onclick="parse('Tenth/bankEducation')">Bank Education</li>
+        <li onclick="parse('Tenth/defense')">Defense</li>
+        <li onclick="parse('Tenth/police')">Police</li>
+        <li onclick="parse('Tenth/postOffice')">Post Office</li>
+        <li onclick="parse('Tenth/railway')">Railway</li>
+      </ul>
+    </details>
+
+    <details role="list">
+      <summary aria-haspopup="listbox" role="button"><i class="fa-solid fa-book-open-reader"></i> &nbsp; 12th Pass</summary>
+      <ul role="listbox">
+        <li onclick="parse('twelfth/Central')">Central</li>
+        <li onclick="parse('twelfth/defense')">Defense</li>
+        <li onclick="parse('twelfth/othersjob')">Others</li>
+      </ul>
+    </details>
+
+    <details role="list">
+      <summary aria-haspopup="listbox" role="button"><i class="fa-solid fa-briefcase"></i> &nbsp; Graduate</summary>
+      <ul role="listbox">
+        <li onclick="parse('Graduate/Allindiaservice')">Pan India Services</li>
+        <li onclick="parse('Graduate/defense')">Defense</li>
+        <li onclick="parse('Graduate/StateJob')">State Jobs</li>
+        <li onclick="parse('Graduate/StatePolice')">State Police</li>
+      </ul>
+    </details>
+  </article>
+
+  <div align="center" id="recommendations">
+    <h1>Recommendations</h1>
+    <article align="left">
+      <ul id="list"></ul>
+    </article>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div align="center" id="testimonials">
+    <h1>Testimonials</h1>
+    <article>
+      <ul id="list2"></ul>
+    </article>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div align="center" id="about">
+    <h1>About</h1>
+    <article>Capers was created with a joint venture between three students to provide a free and simple experience to those in serious need of career recommendations.
+      <br>
+      <a href="https://github.com/n-ce/CAPERS">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </article>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div align="center">
+    <pre>Site designed by <a href= "https://github.com/n-ce/">Animesh</a>, copyleft 2022.</pre>
+    <br><br>
+  </div>
+
+  <script src="JavaScript/DarkMode.js"></script>
+  <script src="JavaScript/fetch.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
